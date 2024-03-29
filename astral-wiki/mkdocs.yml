@@ -1,0 +1,59 @@
+site_name: Astral Wiki
+nav:
+    - 主页: "index.md"
+    - 星骰搭建指南: 
+      - "前言": "1.md"
+      - "基础搭建（手机）": "1-1.md"
+      - "额外功能": "subpage.md"
+      - "问题答疑": "about.md"
+    - 骰娘指令集: "directives.md"
+    - Json牌堆编写：从入门到入土: "draw.md"
+    - API:
+      - "Astral论坛相关API": "api.md"
+      - "星骰api": "astralapi.md"
+    - 其他教程:
+      - "MT管理器教学": "MT.md"
+    - 论坛: "https://astral.snoweven.com/"
+    
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - navigation.top
+    - navigation.footer
+  markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  theme:
+  logo: assets/logo.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - mdx_truly_sane_lists
+extra_css:
+  - css/custom.css
+  - css/extra.css
